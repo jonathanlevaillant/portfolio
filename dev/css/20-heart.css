@@ -1,0 +1,47 @@
+
+/* heart
+   ========================================================================== */
+
+/* default heart */
+
+.heart {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+	color: #d41b29;
+	clip-path: polygon(9.8306% 0, 38.3051% 0, 50% 15.2344%, 61.695% 0, 90.1695% 0, 100% 20.7032%, 100% 44.5313%, 50% 100%, 0 44.5313%, 0 15.2344%);
+	animation: beat 1.2s ease-in-out infinite;
+}
+.heart::after {
+	content: "\e602";
+	display: inline-block;
+	vertical-align: top;
+	font: normal normal normal 6.4rem/1 icomoon;
+	text-transform: none;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.heart::before {
+	content: "";
+	position: absolute;
+	top: -1.6em;
+	left: 1.2em;
+	width: 3em;
+	height: 5em;
+	background: rgba(255,255,255,.15);
+	border-radius: 50%;
+	transform: rotate3d(0,0,1,-25deg);
+}
+
+/* heart beat */
+
+@keyframes beat {
+	43%, 60% {
+		transform: scale3d(1,1,1);
+	}
+	50% {
+		transform: scale3d(1.2,1.2,1);
+	}
+}

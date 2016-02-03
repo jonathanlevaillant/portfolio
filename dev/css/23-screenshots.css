@@ -1,0 +1,50 @@
+
+/* screenshots
+   ========================================================================== */
+
+/* default screenshots */
+
+.screenshots {
+	position: relative;
+	display: block;
+}
+.screenshots__smartphone {
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	bottom: -3.2em;
+}
+
+/* screenshots responsive
+   ========================================================================== */
+
+@media (max-width: 64em) {
+
+	/* default screenshots */
+
+	.screenshots__smartphone {
+		max-width: 10.8em;
+	}
+	.screenshots__smartphone::after {
+		left: 2.8em;
+	}
+}
+@media (max-width: 40em) {
+
+	/* default screenshots */
+
+	.screenshots__smartphone {
+		max-width: 8.8em;
+	}
+	.screenshots__smartphone::after {
+		left: 1.8em;
+	}
+}
+@media (max-width: 30em) {
+
+	/* default screenshots */
+
+	.screenshots__smartphone {
+		display: none;
+	}
+}

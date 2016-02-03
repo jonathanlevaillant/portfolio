@@ -1,0 +1,188 @@
+
+/* helpers
+   ========================================================================== */
+
+/* blocks widths (percentage and pixels) */
+
+.w10 {
+	width: 10%;
+}
+.w20 {
+	width: 20%;
+}
+.w25 {
+	width: 25%;
+}
+.w30 {
+	width: 30%;
+}
+.w33 {
+	width: 33.3334%;
+}
+.w40 {
+	width: 40%;
+}
+.w50 {
+	width: 50%;
+}
+.w60 {
+	width: 60%;
+}
+.w66 {
+	width: 66.6667%;
+}
+.w70 {
+	width: 70%;
+}
+.w75 {
+	width: 75%;
+}
+.w80 {
+	width: 80%;
+}
+.w90 {
+	width: 90%;
+}
+.w100 {
+	width: 100%;
+}
+.wauto {
+	width: auto;
+}
+.wrapper {
+	max-width: 56.8em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* spacing helpers */
+
+.man {
+	margin: 0;
+}
+.mtn {
+	margin-top: 0;
+}
+.mrn {
+	margin-right: 0;
+}
+.mbn {
+	margin-bottom: 0;
+}
+.mln {
+	margin-left: 0;
+}
+.pan {
+	padding: 0;
+}
+.ptn {
+	padding-top: 0;
+}
+.prn {
+	padding-right: 0;
+}
+.pbn {
+	padding-bottom: 0;
+}
+.pln {
+	padding-left: 0;
+}
+.mam {
+	margin: 3.2rem;
+}
+.mtm {
+	margin-top: 3.2rem;
+}
+.mrm {
+	margin-right: 3.2rem;
+}
+.mbm {
+	margin-bottom: 3.2rem;
+}
+.mlm {
+	margin-left: 3.2rem;
+}
+.pam {
+	padding: 3.2rem;
+}
+.ptm {
+	padding-top: 3.2rem;
+}
+.prm {
+	padding-right: 3.2rem;
+}
+.pbm {
+	padding-bottom: 3.2rem;
+}
+.plm {
+	padding-left: 3.2rem;
+}
+.mal {
+	margin: 6.4rem;
+}
+.mtl {
+	margin-top: 6.4rem;
+}
+.mrl {
+	margin-right: 6.4rem;
+}
+.mbl {
+	margin-bottom: 6.4rem;
+}
+.mll {
+	margin-left: 6.4rem;
+}
+.pal {
+	padding: 6.4rem;
+}
+.ptl {
+	padding-top: 6.4rem;
+}
+.prl {
+	padding-right: 6.4rem;
+}
+.pbl {
+	padding-bottom: 6.4rem;
+}
+.pll {
+	padding-left: 6.4rem;
+}
+
+/* helpers responsive
+   ========================================================================== */
+
+@media (min-width: 40.0625em) {
+
+	/* spacing helpers */
+
+	.mas {
+		margin: 1.6rem;
+	}
+	.mts {
+		margin-top: 1.6rem;
+	}
+	.mrs {
+		margin-right: 1.6rem;
+	}
+	.mbs {
+		margin-bottom: 1.6rem;
+	}
+	.mls {
+		margin-left: 1.6rem;
+	}
+	.pas {
+		padding: 1.6rem;
+	}
+	.pts {
+		padding-top: 1.6rem;
+	}
+	.prs {
+		padding-right: 1.6rem;
+	}
+	.pbs {
+		padding-bottom: 1.6rem;
+	}
+	.pls {
+		padding-left: 1.6rem;
+	}
+}

@@ -1,0 +1,35 @@
+
+/* tags
+   ========================================================================== */
+
+/* default tag */
+
+.tag {
+	display: inline-block;
+	vertical-align: top;
+	width: 4em;
+	background: #fc0;
+	text-align: center;
+	font: italic 700 1em/1.6 Bitter, Georgia, serif;
+	text-transform: lowercase;
+	color: #303947;
+	border-radius: .8em;
+}
+
+/* tag skins */
+
+[class*="tag--"] {
+	color: #fff;
+}
+.tag--id2 {
+	background: #d31996;
+}
+.tag--prat {
+	background: #f50;
+}
+.tag--118 {
+	background: #008cd7;
+}
+.tag--finger {
+	background: #1fb0da;
+}

@@ -1,0 +1,57 @@
+
+/* tshirt
+   ========================================================================== */
+
+/* default tshirt */
+
+.tshirt {
+	display: block;
+	width: 6.4em;
+	font: italic 700 1em/1.6 Bitter, Georgia, serif;
+}
+.tshirt::before, .tshirt::after {
+	content: none;
+}
+
+/* tshirt heart */
+
+.tshirt__heart {
+	margin-left: .8em;
+}
+
+/* tshirt txt */
+
+.tshirt__txt {
+	vertical-align: top;
+}
+.tshirt__txt::after {
+	display: none;
+}
+.tshirt__txt--big {
+	font-size: 4.4em;
+	line-height: .7;
+}
+.tshirt__txt--medium {
+	font-size: 3.4em;
+	line-height: .95;
+}
+.tshirt__txt--small {
+	font-size: .83em;
+	line-height: .95;
+}
+.tshirt__txt--tiny {
+	font-size: .635em;
+	line-height: 0;
+}
+
+/* tshirt responsive
+   ========================================================================== */
+
+@media (max-width: 40em) {
+
+	/* tshirt txt */
+
+	.tshirt__txt--regular, .tshirt__txt--small, .tshirt__txt--tiny {
+		display: none;
+	}
+}

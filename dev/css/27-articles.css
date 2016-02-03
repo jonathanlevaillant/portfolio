@@ -1,0 +1,39 @@
+
+/* articles
+   ========================================================================== */
+
+/* default article */
+
+.article__header {
+	margin-top: 4.8em;
+	margin-bottom: 4.8em;
+}
+.article__title {
+	color: #333;
+}
+.article__title-skin {
+	color: #fc0;
+}
+
+/* articles responsive
+   ========================================================================== */
+
+@media (max-width: 71em) {
+
+	/* default article */
+
+	.article__header {
+		margin-top: 3.2em;
+		margin-bottom: 3.2em;
+		padding-right: 1.6em;
+		padding-left: 1.6em;
+	}
+}
+@media (max-width: 40em) {
+
+	/* default article */
+
+	.article__header {
+		text-align: center;
+	}
+}

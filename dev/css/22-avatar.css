@@ -1,0 +1,52 @@
+
+/* avatar
+   ========================================================================== */
+
+/* default avatar */
+
+.avatar {
+	position: relative;
+	display: block;
+	max-width: 18.4em;
+	background: url(../img/avatar.svg) no-repeat;
+	background-size: cover;
+}
+.avatar::before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+/* avatar tshirt */
+
+.avatar__tshirt {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-top: 68%;
+	margin-left: -2.3em;
+	color: #fff;
+	transform-origin: 50% 0 0;
+	transform: skew(-2deg,5deg) scale3d(.8,.8,1);
+}
+
+/* avatar responsive
+   ========================================================================== */
+
+@media (min-width: 40.0625em) {
+
+	/* default avatar */
+
+	.avatar {
+		max-width: 12.9em;
+	}
+	.avatar::before {
+		padding-top: 223.2559%;
+	}
+
+	/* avatar tshirt */
+
+	.avatar__tshirt {
+		transform: skew(-2deg,5deg) scale3d(.6,.6,1);
+	}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "latest",
+	"gulp-load-plugins": "latest",
+	"gulp-replace": "latest",
+	"gulp-rename": "latest",
+	"gulp-uncss": "latest",
+	"gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+	"gulp-cssnano": "latest",
+	"gulp-csso": "latest",
+	"critical": "latest",
+	"gulp-uglify": "latest",
+	"gulp-htmlmin": "latest",
+	"gulp-imagemin": "latest",
+	"merge-stream": "latest",
+	"del": "latest",
+	"gulp-sync": "latest"
+  }
+}

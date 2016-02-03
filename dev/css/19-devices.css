@@ -1,0 +1,86 @@
+
+/* devices
+   ========================================================================== */
+
+/* default device */
+
+.device {
+	position: relative;
+	display: block;
+	max-width: 47.2em;
+	padding-top: 1.6em;
+	background: #303947;
+	box-shadow: 0 .4em .8em rgba(0,0,0,.12);
+	border-radius: .4em .4em 0 0;
+}
+.device::before, .device::after {
+	content: "";
+	position: absolute;
+	top: .6em;
+	left: .8em;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+}
+.device::before {
+	background: #ffe57f;
+}
+.device::after {
+	left: 1.6em;
+	background: #fff;
+	box-shadow: .8em 0 #fff;
+}
+
+/* device full */
+
+.device--full {
+	max-width: none;
+}
+
+/* device smartphone */
+
+.device--smartphone {
+	max-width: 13.6em;
+	padding: 3.2em .8em;
+	border-radius: 1.6em;
+}
+.device--smartphone::before {
+	top: auto;
+	bottom: .8em;
+	left: 50%;
+	width: 1.6em;
+	height: 1.6em;
+	margin-left: -.8em;
+}
+.device--smartphone::after {
+	top: 1.4em;
+	left: 4.2em;
+	box-shadow: 1.45em 0 0 -2px #fff, 1.5em 0 0 -2px #fff, 1.55em 0 0 -2px #fff,
+				1.6em 0 0 -2px #fff, 1.65em 0 0 -2px #fff, 1.7em 0 0 -2px #fff,
+				1.75em 0 0 -2px #fff, 1.8em 0 0 -2px #fff, 1.85em 0 0 -2px #fff,
+				1.9em 0 0 -2px #fff, 1.95em 0 0 -2px #fff, 2em 0 0 -2px #fff,
+				2.05em 0 0 -2px #fff, 2.1em 0 0 -2px #fff, 2.15em 0 0 -2px #fff,
+				2.2em 0 0 -2px #fff, 2.25em 0 0 -2px #fff, 2.3em 0 0 -2px #fff,
+				2.35em 0 0 -2px #fff, 2.4em 0 0 -2px #fff, 2.45em 0 0 -2px #fff,
+				2.5em 0 0 -2px #fff, 2.55em 0 0 -2px #fff, 2.6em 0 0 -2px #fff,
+				2.65em 0 0 -2px #fff, 2.7em 0 0 -2px #fff, 2.75em 0 0 -2px #fff,
+				2.8em 0 0 -2px #fff, 2.85em 0 0 -2px #fff, 2.9em 0 0 -2px #fff,
+				2.95em 0 0 -2px #fff, 3em 0 0 -2px #fff, 3.05em 0 0 -2px #fff,
+				3.1em 0 0 -2px #fff, 3.15em 0 0 -2px #fff, 3.2em 0 0 -2px #fff,
+				3.25em 0 0 -2px #fff, 3.3em 0 0 -2px #fff, 3.35em 0 0 -2px #fff;
+}
+
+/* device skins */
+
+.device--id2::before {
+	background: #e98cca;
+}
+.device--prat::before {
+	background: #ffaa7f;
+}
+.device--118::before {
+	background: #7fc5eb;
+}
+.device--finger::before {
+	background: #8fd7ec;
+}

@@ -1,0 +1,65 @@
+
+/* map
+   ========================================================================== */
+
+/* default map */
+
+.map {
+	position: relative;
+	display: block;
+}
+.map::after {
+	content: "\e60b";
+	display: block;
+	font: normal normal normal 21.3em/1 icomoon;
+	text-transform: none;
+	color: rgba(0,0,0,.25);
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* map pin */
+
+.map__pin {
+	position: absolute;
+	top: 4.55em;
+	left: 21.75em;
+	width: .8em;
+	height: .8em;
+	background: #fc0;
+	border-radius: 50%;
+}
+.map__pin::after {
+	content: "\e60c";
+	position: absolute;
+	top: -1.13em;
+	left: -.23em;
+	font: normal normal normal 3.25em/1 icomoon;
+	text-transform: none;
+	color: #fc0;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	animation: pin 2s ease-in-out infinite;
+}
+
+/* map pin animation */
+
+@keyframes pin {
+	50% {
+		transform: translate3d(0,-13px,0);
+	}
+}
+
+/* map responsive
+   ========================================================================== */
+
+@media (max-width: 40em) {
+
+	/* map pin */
+
+	.map__pin {
+		display: none;
+	}
+}

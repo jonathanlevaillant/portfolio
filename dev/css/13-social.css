@@ -1,0 +1,43 @@
+
+/* social
+   ========================================================================== */
+
+/* default social */
+
+.social {
+	padding-left: 0;
+	color: #fff;
+}
+.social__item {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 1.6em;
+	line-height: 1;
+}
+.social__item + .social__item {
+	margin-left: 1.6rem;
+}
+.social__link {
+	opacity: .7;
+	color: #fff;
+	text-decoration: none;
+	transition: opacity .2s ease;
+}
+.social__link:hover, .social__link:focus, .social__link:active {
+	opacity: 1;
+}
+.social__link::before {
+	margin-right: 0;
+}
+
+/* social responsive
+   ========================================================================== */
+
+@media (max-width: 40em) {
+
+	/* default social */
+
+	.social {
+		text-align: center;
+	}
+}

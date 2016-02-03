@@ -1,0 +1,76 @@
+
+/* grids
+   ========================================================================== */
+
+/* grid container */
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: -1.6em;
+	margin-left: -.8em;
+}
+.grid--h {
+	flex-direction: row;
+}
+.grid--hr {
+	flex-direction: row-reverse;
+}
+.grid--v {
+	flex-direction: column;
+}
+.grid--vr {
+	flex-direction: column-reverse;
+}
+
+/* grid childs */
+
+.grid__item {
+	flex: 0 0 auto;
+	width: calc(100% - .8em);
+	margin-bottom: 1.6em;
+	margin-left: .8em;
+}
+
+/* grids responsive
+   ========================================================================== */
+
+@media (min-width: 40.0625em) {
+
+	/* grid container large */
+
+	.grid--gl {
+		margin-left: -5.6em;
+	}
+
+	/* grid childs */
+
+	.grid--2 .grid__item {
+		width: calc(50% - .8em);
+	}
+	.grid--2-3 .grid__item:nth-child(odd) {
+		width: calc(66.6667% - .8em);
+	}
+	.grid--2-3 .grid__item:nth-child(even) {
+		width: calc(33.3334% - .8em);
+	}
+	.grid--1-4 .grid__item:nth-child(odd) {
+		width: calc(25% - .8em);
+	}
+	.grid--1-4 .grid__item:nth-child(even) {
+		width: calc(75% - .8em);
+	}
+	.grid--3-4 .grid__item:nth-child(odd) {
+		width: calc(75% - .8em);
+	}
+	.grid--3-4 .grid__item:nth-child(even) {
+		width: calc(25% - .8em);
+	}
+
+	/* grid childs large */
+
+	.grid--gl .grid__item {
+		width: calc(50% - 5.6em);
+		margin-left: 5.6em;
+	}
+}

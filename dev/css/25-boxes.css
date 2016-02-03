@@ -1,0 +1,201 @@
+
+/* boxes
+   ========================================================================== */
+
+/* default box */
+
+.box {
+	padding: 3.2em 1.6em;
+	background: #f0f0f0;
+	color: #666;
+}
+.box__title {
+	color: #333;
+}
+.box__subtitle {
+	display: block;
+	color: #fc0;
+}
+
+/* box primary */
+
+.box--primary {
+	background: #fc0;
+	color: #333;
+}
+.box--primary .box__title {
+	color: #fff;
+}
+.box--primary .box__subtitle {
+	color: #333;
+}
+
+/* box secondary */
+
+.box--secondary {
+	background: #303947;
+	color: #fff;
+}
+.box--secondary .box__title {
+	position: relative;
+	padding-bottom: 3.2rem;
+	text-transform: uppercase;
+	color: #fc0;
+}
+.box--secondary .box__title::after {
+	content: "";
+	position: absolute;
+	bottom: 1.4rem;
+	right: 0;
+	left: 0;
+	height: 4px;
+	background: #fff;
+	border-radius: 2px;
+}
+
+/* box light */
+
+.box--light {
+	padding-top: 0;
+	background: none;
+	color: inherit;
+}
+
+/* box title icon */
+
+.box__title--icon::before, .box__title--icon.icon-after::after {
+	font-size: 3.2rem;
+	color: #999;
+	transition: color .2s ease;
+}
+.box__title--icon:hover::before, .box__title--icon.icon-after:hover::after,
+.box__title--icon:focus::before, .box__title--icon.icon-after:focus::after,
+.box__title--icon:active::before, .box__title--icon.icon-after:active::after {
+	color: #666;
+	animation: shake .2s ease 2;
+}
+
+/* box title icon animation */
+
+@keyframes shake {
+	50% {
+		transform: rotate3d(0,0,1,15deg);
+	}
+}
+
+/* box spacer */
+
+.box--spacer {
+	margin-top: 1.6em;
+}
+
+/* box media */
+
+.box--media {
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+.box__media {
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+/* box potion */
+
+.box--potion {
+	padding-bottom: 6.4em;
+}
+.box__media--potion {
+	bottom: -.8em;
+}
+
+/* box map */
+
+.box__media--map {
+	bottom: 7.1em;
+	margin-left: -20.4em;
+	transform: rotate(-12deg);
+}
+
+/* boxes responsive
+   ========================================================================== */
+
+@media (min-width: 22.5625em) {
+
+	/* box spacer */
+
+	.box--spacer {
+		margin-right: 1.6em;
+		margin-left: 1.6em;
+	}
+}
+@media (min-width: 30.0625em) {
+
+	/* default box */
+
+	.box {
+		padding-bottom: 6.4em;
+	}
+
+	/* box avatar */
+
+	.box__avatar:first-child {
+		margin-bottom: -3.2em;
+	}
+}
+@media (min-width: 40.0625em) {
+
+	/* box secondary */
+
+	.box--secondary .box__title::after {
+		width: 8rem;
+	}
+}
+@media (min-width: 71.0625em) {
+
+	/* default box */
+
+	.box {
+		padding-top: 4.8em;
+		padding-bottom: 8em;
+	}
+
+	/* box light */
+
+	.box--light {
+		padding-top: 0;
+	}
+
+	/* box spacer */
+
+	.box--spacer {
+		margin: 3.2em;
+	}
+
+	/* box avatar */
+
+	.box__avatar:first-child {
+		margin-top: -1.6em;
+		margin-bottom: -6.4em;
+	}
+}
+@media (max-width: 40em) {
+
+	/* box primary */
+
+	.box--primary .box__title {
+		text-align: center;
+	}
+
+	/* box avatar */
+
+	.box__avatar:first-child {
+		margin-right: auto;
+		margin-left: auto;
+		background-color: #fff;
+		border-radius: 50%;
+	}
+}

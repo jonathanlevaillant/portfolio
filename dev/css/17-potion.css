@@ -1,0 +1,112 @@
+
+/* potion
+   ========================================================================== */
+
+/* default potion */
+
+.potion {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+.potion::after {
+	content: "\e601";
+	display: block;
+	font: normal normal normal 5.6em/1 icomoon;
+	text-transform: none;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* potion bubbles */
+
+.potion__bubbles {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.potion::before, .potion__bubbles::before, .potion__bubbles::after {
+	content: "";
+	position: absolute;
+	background: #999;
+	border-radius: 50%;
+}
+.potion__bubbles::before {
+	top: -.6em;
+	right: 1.2em;
+	width: .6em;
+	height: .6em;
+	opacity: 0;
+	animation: bubble-left 2s linear .8s infinite;
+}
+.potion::before {
+	top: -2em;
+	right: .4em;
+	width: 1em;
+	height: 1em;
+	animation: bubble-center 2s linear infinite;
+}
+.potion__bubbles::after {
+	top: -.8em;
+	right: 0;
+	width: .8em;
+	height: .8em;
+	opacity: 0;
+	animation: bubble-right 2s linear .2s infinite;
+}
+
+/* potion bubbles animation */
+
+@keyframes bubble-left {
+	0% {
+		opacity: 1;
+		transform: translate3d(0,.8em,0) scale3d(.25,.25,1);
+	}
+	95% {
+		opacity: 1;
+		transform: translate3d(0,-.6em,0) scale3d(1,1,1);
+	}
+	100% {
+		opacity: 0;
+		transform: translate3d(0,-.8em,0) scale3d(2,2,1);
+	}
+}
+@keyframes bubble-center {
+	0% {
+		transform: translate3d(0,40px,0) scale3d(.25,.25,1);
+	}
+	95% {
+		opacity: 1;
+		transform: translate3d(0,4px,0) scale3d(1,1,1);
+	}
+	100% {
+		opacity: 0;
+		transform: translate3d(0,0,0) scale3d(2,2,1);
+	}
+}
+@keyframes bubble-right {
+	0% {
+		opacity: 1;
+		transform: translate3d(0,1.6em,0) scale3d(.25,.25,1);
+	}
+	95% {
+		opacity: 1;
+		transform: translate3d(0,0,0) scale3d(1,1,1);
+	}
+	100% {
+		opacity: 0;
+		transform: translate3d(0,-.2em,0) scale3d(2,2,1);
+	}
+}
+
+/* potion invert */
+
+.potion--invert {
+	color: #fff;
+}
+.potion--invert::before, .potion--invert .potion__bubbles::before, .potion--invert .potion__bubbles::after {
+	background: #fff;
+}

@@ -1,0 +1,36 @@
+
+/* alerts
+   ========================================================================== */
+
+/* default alert */
+
+.alert {
+	position: fixed;
+	z-index: 10;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	font-style: italic;
+	line-height: 3.2;
+    color: #fff;
+	animation: alert .4s ease 4s forwards;
+}
+
+/* alert status */
+
+.alert--success {
+	background: #3fb8af;
+}
+.alert--warning {
+	background: #ea3556;
+}
+
+/* alert animation */
+
+@keyframes alert {
+	100% {
+		visibility: hidden;
+		opacity: 0;
+	}
+}

@@ -1,0 +1,50 @@
+
+/* burger responsive
+   ========================================================================== */
+
+@media (max-width: 48em) {
+
+	/* default burger */
+
+	.burger {
+		position: relative;
+		display: block;
+		width: 3.2em;
+		height: 3.2em;
+		margin-top: 0;
+	}
+
+	/* burger icon */
+
+	.burger__icon, .burger__icon::before, .burger__icon::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 24px;
+		height: 4px;
+		margin: auto;
+		background: #333;
+		border-radius: 2px;
+	}
+	.burger__icon::before {
+		content: "";
+		top: -8px;
+		bottom: auto;
+	}
+	.burger__icon::after {
+		content: "";
+		top: auto;
+		bottom: -8px;
+	}
+
+	/* burger label */
+
+	.burger__label {
+		position: absolute;
+		top: -1.5em;
+		right: calc(20px + 1em);
+		line-height: 3.2;
+	}
+}

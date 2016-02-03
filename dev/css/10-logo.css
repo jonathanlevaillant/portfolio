@@ -1,0 +1,60 @@
+
+/* logo
+   ========================================================================== */
+
+/* default logo */
+
+.logo {
+	position: relative;
+	display: block;
+	width: 6.4rem;
+	height: 6.4rem;
+	background: #333;
+	text-align: center;
+	font: italic 700 1.25em/2.4 Bitter, Georgia, serif;
+	text-transform: lowercase;
+	color: #fff;
+	text-decoration: none;
+	transition: color .2s ease;
+}
+.logo__title {
+	position: relative;
+	z-index: 1;
+}
+.logo__title::after {
+	display: none;
+}
+
+/* logo crossed */
+
+.logo::before, .logo::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	transform: rotate3d(0,0,1,45deg);
+}
+.logo::before {
+	width: 90%;
+	height: 4px;
+	background: #fc0;
+	border-radius: 2px;
+	transition: all .2s ease;
+}
+.logo::after {
+	width: 55%;
+	height: 55%;
+	background: inherit;
+}
+
+/* logo active */
+
+.logo:hover, .logo:focus, .logo:active {
+	color: #fc0;
+}
+.logo:hover::before, .logo:focus::before, .logo:active::before {
+	transform: rotate3d(0,0,1,45deg) scale3d(.5,1,1);
+}
